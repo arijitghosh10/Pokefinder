@@ -1,0 +1,27 @@
+.name{
+    font-size: 3.5rem;
+    color: rgb(247, 247, 247);
+    text-transform: capitalize;
+}
+.wrapper{
+    margin: auto 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #0F9D58;
+    box-shadow: 3px 3px 4px 4px #0F9D58;
+    border-radius: 1rem;
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 2rem;
+    color: #0F9D58;
+    /**border: 1px solid red;**/
+}
+.details>h3{
+    color: #4285F4;
+}

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+.heading{
+    text-align: center;
+}
+.heading>h1{
+    font-size: 4rem;
+    color: #4285F4;
+    font-family: 'Roboto Slab', serif;;
+}

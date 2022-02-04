@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+:root{
+    --clr-green:#0F9D58;
+}
+.pokemon{
+    width: 10rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: 2px solid var(--clr-green);
+    cursor: pointer;
+    border-radius: 0.75rem;
+    box-shadow: 2px 2px 4px 4px #161616;
+    transition: transform 250ms ease-in-out;
+}
+.pokemon:hover{
+    transform: scale(1.1);
+}
+.pokemon>h3{
+    color: var(--clr-green);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.link{
+    text-decoration: none;
+}
