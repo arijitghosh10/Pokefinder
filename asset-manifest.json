@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Pokefinder/static/css/main.64255442.css",
-    "main.js": "/Pokefinder/static/js/main.d7fe2745.js",
+    "main.css": "/Pokefinder/static/css/main.526a5c8e.css",
+    "main.js": "/Pokefinder/static/js/main.5e755cdd.js",
     "index.html": "/Pokefinder/index.html",
-    "main.64255442.css.map": "/Pokefinder/static/css/main.64255442.css.map",
-    "main.d7fe2745.js.map": "/Pokefinder/static/js/main.d7fe2745.js.map"
+    "main.526a5c8e.css.map": "/Pokefinder/static/css/main.526a5c8e.css.map",
+    "main.5e755cdd.js.map": "/Pokefinder/static/js/main.5e755cdd.js.map"
   },
   "entrypoints": [
-    "static/css/main.64255442.css",
-    "static/js/main.d7fe2745.js"
+    "static/css/main.526a5c8e.css",
+    "static/js/main.5e755cdd.js"
   ]
 }
