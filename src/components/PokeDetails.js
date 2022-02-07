@@ -8,7 +8,6 @@ const PokeDetails = (props)=>{
     useEffect(()=>{
         fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then(res=>{
             res.json().then(data=>{
-                console.log(data)
                 const { sprites } = data
                 let allSprites = []
                 for(const key in sprites){
@@ -31,20 +30,23 @@ const PokeDetails = (props)=>{
     },[id])
     
     return (
-        <div className={styles.wrapper}>
-            <div className={styles.name}>{details.name}</div>
-            <div className={styles.images}>
-                {details.sprites.map((el,ind)=>{
-                    return <img src={el} alt="Pokemon" key={ind}/>
-                })}
+        <>
+            <div className={styles.wrapper}>
+                <a href="/" className={styles.back}>Back to all</a>
+                <div className={styles.name}>{details.name}</div>
+                <div className={styles.images}>
+                    {details.sprites.map((el,ind)=>{
+                        return <img src={el} alt="Pokemon" key={ind}/>
+                    })}
+                </div>
+                <div className={styles.topic}>Abilities:</div>
+                <div className={styles.details}>
+                    {details.ability.map((el,ind)=>{
+                        return <div key={ind}>{el}</div>
+                    })}
+                </div>
             </div>
-            <div className={styles.details}>
-                <h3>Abilities:</h3>
-                {details.ability.map((el,ind)=>{
-                    return <div key={ind}>{el}</div>
-                })}
-            </div>
-        </div>
+        </>
     )
 }
 export default PokeDetails;
